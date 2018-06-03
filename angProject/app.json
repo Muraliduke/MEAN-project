@@ -1,0 +1,19 @@
+{
+  "name": "MEAN Project Centre",
+  "description": "Example contact list app using MEAN",
+  "keywords": [
+    "MEAN",
+    "Angular",
+    "Node"
+  ],
+  "repository": "",
+  "success_url": "/",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+  ]
+}
