@@ -2,10 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule } from '@angular/material';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
+import { CoreModule } from './core/core.module';
 
 import { AppComponent } from './core/app.component';
-import { CoreModule } from './core/core.module';
+
+//modules here
+import {HomeModule} from './home/home.module'
 
 
 @NgModule({
@@ -13,9 +17,13 @@ import { CoreModule } from './core/core.module';
  ],
   imports: [
     BrowserModule,
+    RouterModule,
     CoreModule,
     BrowserAnimationsModule,
-    MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule
+    NgbModule.forRoot(),
+
+    HomeModule
+ 
   ],
   providers: [],
   bootstrap: [AppComponent],
